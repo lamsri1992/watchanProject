@@ -120,7 +120,7 @@
                         <div class="row mb-3">
                             <label for="inputText" class="col-sm-2 col-form-label">
                                 <i class="bi bi-coin"></i>
-                                งบประมาน
+                                แหล่งงบประมาน
                             </label>
                             <div class="col-sm-10">
                                 <select name="" class="form-select">
@@ -131,6 +131,15 @@
                                     </option>
                                     @endforeach
                                 </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputText" class="col-sm-2 col-form-label">
+                                <i class="bi bi-cash-coin"></i>
+                                งบประมานที่ใช้
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
