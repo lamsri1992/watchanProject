@@ -107,7 +107,14 @@
                                 หน่วยงาน
                             </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control">
+                                <select name="" class="form-select">
+                                    <option>----- กรุณาเลือก -----</option>
+                                    @foreach ($hos as $res)
+                                    <option value="{{ $res->h_id }}">
+                                        {{ $res->h_name }}
+                                    </option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -116,7 +123,14 @@
                                 งบประมาน
                             </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control">
+                                <select name="" class="form-select">
+                                    <option>----- กรุณาเลือก -----</option>
+                                    @foreach ($budget as $res)
+                                    <option value="{{ $res->bud_id }}">
+                                        {{ $res->bud_name }}
+                                    </option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -138,8 +152,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label"></label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-12 text-center">
                                 <button type="button" class="btn btn-success"
                                     onclick="Swal.fire({
                                         title: 'บันทึกข้อมูล ?',
@@ -158,6 +171,10 @@
                                     >
                                     <i class="bi bi-check-circle-fill"></i>
                                     บันทึกข้อมูล
+                                </button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                    <i class="bi bi-x-circle-fill"></i>
+                                    ปิดหน้าต่าง
                                 </button>
                             </div>
                         </div>

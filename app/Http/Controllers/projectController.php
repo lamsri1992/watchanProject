@@ -20,7 +20,9 @@ class projectController extends Controller
                 ->join('tb_project_status','tb_project_status.p_status_id','tb_projects.pj_status')
                 ->get();
         $stat = DB::table('tb_project_status')->get();
-        return view('plan.list',['list'=>$list,'stat'=>$stat]);
+        $hos = DB::table('tb_hos')->get();
+        $budget = DB::table('tb_budget')->get();
+        return view('plan.list',['list'=>$list,'stat'=>$stat,'hos'=>$hos,'budget'=>$budget]);
     }
 
     public function list_show($id)
