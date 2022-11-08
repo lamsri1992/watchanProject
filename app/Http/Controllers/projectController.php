@@ -48,6 +48,28 @@ class projectController extends Controller
         return back()->with('success','อัพเดตสถานะสำเร็จ : '.$stat->p_status_name);
     }
 
+    public function create(Request $request)
+    {
+        $word  = $request->file('docFile');
+        $pdf  = $request->file('pdfFile');
+        $nword  = $request->file('docFile')->getClientOriginalName();
+        $npdf  = $request->file('pdfFile')->getClientOriginalName();
+        $word->move('plan/word', $nword);
+        $pdf->move('plan/pdf', $npdf);
+
+        DB::table('tb_projects')->insert(
+            [
+                "pj_name" => $request->get('pj_name'),
+                "pj_budget" => $request->get('pj_budget'),
+                "pj_author" => $request->get('pj_author'),
+                "pj_hos" => $request->get('pj_hos'),
+                "pj_cost" => $request->get('pj_cost'),
+                "pj_word" => $nword,
+                "pj_pdf" => $npdf
+            ]);
+        return back()->with('success','สร้างโครงการแผนงานใหม่สำเร็จ');
+    }
+
     public function file_update(Request $request,$id)
     {
         $word  = $request->file('docFile');

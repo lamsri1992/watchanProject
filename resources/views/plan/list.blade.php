@@ -82,14 +82,16 @@
             </div>
             <div class="modal-body">
                 <div class="card-body">
-                    <form>
+                    <form action="{{ route('pm.create') }}" method="post" enctype="multipart/form-data">
+                        {{ csrf_field() }}
+                        {{ method_field('POST') }}
                         <div class="row mb-3">
                             <label for="inputText" class="col-sm-2 col-form-label">
                                 <i class="bi bi-clipboard"></i>
                                 ระบุชื่อโครงการ
                             </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control">
+                                <input type="text" name="pj_name" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -98,7 +100,7 @@
                                 ผู้จัดทำ
                             </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control">
+                                <input type="text" name="pj_author" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -107,7 +109,7 @@
                                 หน่วยงาน
                             </label>
                             <div class="col-sm-10">
-                                <select name="" class="form-select">
+                                <select name="pj_hos" class="form-select">
                                     <option>----- กรุณาเลือก -----</option>
                                     @foreach ($hos as $res)
                                     <option value="{{ $res->h_id }}">
@@ -123,7 +125,7 @@
                                 แหล่งงบประมาน
                             </label>
                             <div class="col-sm-10">
-                                <select name="" class="form-select">
+                                <select name="pj_budget" class="form-select">
                                     <option>----- กรุณาเลือก -----</option>
                                     @foreach ($budget as $res)
                                     <option value="{{ $res->bud_id }}">
@@ -139,7 +141,7 @@
                                 งบประมานที่ใช้
                             </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control">
+                                <input type="text" name="pj_cost" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">

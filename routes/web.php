@@ -22,5 +22,6 @@ Route::group(['prefix' => '/'], function () {
 	Route::get('/list','projectController@list')->name('pm.list');
 	Route::get('/list/{id}','projectController@list_show')->name('pm.list_show');
 	Route::get('/list/status/{id}','projectController@list_status')->name('pm.list_status');
+	Route::post('/list/create','projectController@create')->name('pm.create');
 	Route::post('/list/file/{id}','projectController@file_update')->name('pm.file_update');
 });
