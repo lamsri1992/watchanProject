@@ -65,11 +65,11 @@
                 <i class="bi bi-download"></i>
                 <span>ดาวน์โหลด TH-Sarabun-PSK</span>
             </a>
-            <a class="nav-link collapsed" href="{{ asset('files/frm_1.docx') }}" target="_blank">
+            <a class="nav-link collapsed" href="{{ asset('files/frm_2.docx') }}" target="_blank">
                 <i class="bi bi-download"></i>
                 <span>ดาวน์โหลดแบบฟอร์มแนวตั้ง</span>
             </a>
-            <a class="nav-link collapsed" href="{{ asset('files/frm_2.doc') }}" target="_blank">
+            <a class="nav-link collapsed" href="{{ asset('files/frm_1.doc') }}" target="_blank">
                 <i class="bi bi-download"></i>
                 <span>ดาวน์โหลดแบบฟอร์มแนวนอน</span>
             </a>
