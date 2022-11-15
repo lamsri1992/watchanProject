@@ -15,7 +15,7 @@
                                     <i class="bi bi-inboxes"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>17 รายการ</h6>
+                                    <h6>XX รายการ</h6>
                                 </div>
                             </div>
                         </div>
@@ -30,7 +30,7 @@
                                     <i class="bi bi-check2-circle"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>0 รายการ</h6>
+                                    <h6>XX รายการ</h6>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                                     <i class="bi bi-x-circle"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>17 รายการ</h6>
+                                    <h6>XX รายการ</h6>
                                 </div>
                             </div>
                         </div>
@@ -73,31 +73,10 @@
                             </h5>
                             <div class="activity">
                                 <div class="activity-item d-flex">
-                                    <div class="activite-label text-center">3 พ.ย.</div>
-                                    <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
-                                    <div class="activity-content">
-                                        ส่งแผนงานโครงการให้ผู้อำนวยการลงนาม
-                                    </div>
-                                </div>
-                                <div class="activity-item d-flex">
-                                    <div class="activite-label text-center">31 ต.ค.</div>
+                                    <div class="activite-label text-center">31 ต.ค. 65</div>
                                     <i class='bi bi-check-circle-fill activity-badge text-success align-self-start'></i>
                                     <div class="activity-content">
-                                        ส่งแผนงานโครงการให้หัวหน้าสสอ.ลงนาม
-                                    </div>
-                                </div>
-                                <div class="activity-item d-flex">
-                                    <div class="activite-label text-center">25 ต.ค.</div>
-                                    <i class='bi bi-check-circle-fill activity-badge text-success align-self-start'></i>
-                                    <div class="activity-content">
-                                        ส่งแผนงานโครงการให้หัวหน้าฝ่ายลงนาม
-                                    </div>
-                                </div>
-                                <div class="activity-item d-flex">
-                                    <div class="activite-label text-center">1 ต.ค.</div>
-                                    <i class='bi bi-check-circle-fill activity-badge text-success align-self-start'></i>
-                                    <div class="activity-content">
-                                        แจ้ง คปสอ. ดำเนินการจัดทำแผนงานโครงการ
+                                        Test Beta Version
                                     </div>
                                 </div>
                             </div>

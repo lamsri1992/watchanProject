@@ -6,13 +6,13 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                       <div class="col-md-10">
+                       <div class="col-md-9">
                            <h5 class="card-title">
                                <i class="bi bi-folder2-open"></i>
                                ข้อมูลแผนงานโครงการ
                            </h5>
                        </div>
-                       <div class="col-md-2">
+                       <div class="col-md-3">
                            <div class="d-grid gap-2 mt-3">
                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addPM">
                                    <i class="bi bi-clipboard-plus"></i>
